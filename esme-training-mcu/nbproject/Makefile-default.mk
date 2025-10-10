@@ -287,12 +287,10 @@ ${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbp
 	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.map  -D__DEBUG=1  -mdebugger=none  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -Og -maddrqual=ignore -xassembler-with-cpp -I"src/DRIVERS/LCD/Conf" -I"src/DRIVERS/LCD/Core" -I"src/HARDWARE/ADC/Conf" -I"src/HARDWARE/ADC/Core" -I"src/HARDWARE/CLOCK/Conf" -I"src/HARDWARE/CLOCK/Core" -I"src/HARDWARE/EUSART" -I"src/HARDWARE/I2CM" -I"src/HARDWARE/ISR" -I"src/HARDWARE/TIMER" -I"src/TOOLS/Common/Conf" -I"src/TOOLS/Common/Core" -I"src/TOOLS/Common/Port" -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto        $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 	@${RM} ${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.hex 
 	
-	
 else
 ${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} ${DISTDIR} 
 	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.map  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -Og -maddrqual=ignore -xassembler-with-cpp -I"src/DRIVERS/LCD/Conf" -I"src/DRIVERS/LCD/Core" -I"src/HARDWARE/ADC/Conf" -I"src/HARDWARE/ADC/Core" -I"src/HARDWARE/CLOCK/Conf" -I"src/HARDWARE/CLOCK/Core" -I"src/HARDWARE/EUSART" -I"src/HARDWARE/I2CM" -I"src/HARDWARE/ISR" -I"src/HARDWARE/TIMER" -I"src/TOOLS/Common/Conf" -I"src/TOOLS/Common/Core" -I"src/TOOLS/Common/Port" -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
-	
 	
 endif
 
@@ -308,3 +306,11 @@ endif
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${OBJECTDIR}
 	${RM} -r ${DISTDIR}
+
+# Enable dependency checking
+.dep.inc: .depcheck-impl
+
+DEPFILES=$(wildcard ${POSSIBLE_DEPFILES})
+ifneq (${DEPFILES},)
+include ${DEPFILES}
+endif
