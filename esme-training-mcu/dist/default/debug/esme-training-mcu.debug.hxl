@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\HL8112\AppData\Local\Temp\xcAsjgc.\driver_tmp_3.o
+ C:\Users\HL8112\AppData\Local\Temp\xcAsl64.\driver_tmp_3.o
  -Odist/default/debug\esme-training-mcu.debug.hex
  -logfile=dist/default/debug\esme-training-mcu.debug.hxl
  -addressing=1
@@ -9,11 +9,11 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\HL8112\AppData\Local\Temp\xcAsjgc.\driver_tmp_3.o)
-  8h - B5h		(C:\Users\HL8112\AppData\Local\Temp\xcAsjgc.\driver_tmp_3.o)
-  FE0Ch - 11B3Dh		(C:\Users\HL8112\AppData\Local\Temp\xcAsjgc.\driver_tmp_3.o)
-  300000h - 300001h		(C:\Users\HL8112\AppData\Local\Temp\xcAsjgc.\driver_tmp_3.o)
-  300004h - 300007h		(C:\Users\HL8112\AppData\Local\Temp\xcAsjgc.\driver_tmp_3.o)
+  0h - 3h		(C:\Users\HL8112\AppData\Local\Temp\xcAsl64.\driver_tmp_3.o)
+  8h - B5h		(C:\Users\HL8112\AppData\Local\Temp\xcAsl64.\driver_tmp_3.o)
+  FE0Ch - 11B3Dh		(C:\Users\HL8112\AppData\Local\Temp\xcAsl64.\driver_tmp_3.o)
+  300000h - 300001h		(C:\Users\HL8112\AppData\Local\Temp\xcAsl64.\driver_tmp_3.o)
+  300004h - 300007h		(C:\Users\HL8112\AppData\Local\Temp\xcAsl64.\driver_tmp_3.o)
  Unused ranges:
   4h - 7h
   B6h - FE0Bh
@@ -23,7 +23,7 @@
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\HL8112\AppData\Local\Temp\xcAsjgc.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\HL8112\AppData\Local\Temp\xcAsl64.\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------

@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=src/main.c src/DRIVERS/LCD/Core/LCD.c src/HARDWARE/ADC/Core/ADC.c src/HARDWARE/CLOCK/Core/CLOCK.c src/HARDWARE/EUSART/EUSART.c src/HARDWARE/I2CM/I2CM.c src/HARDWARE/ISR/ISR.c src/HARDWARE/TIMER/TIMER.c src/TOOLS/Common/Core/Common.c src/TOOLS/Common/Port/Common_pt.c src/DRIVERS/LCD/Conf/LCD_cfg.c
+SOURCEFILES_QUOTED_IF_SPACED=src/main.c src/DRIVERS/LCD/Core/LCD.c src/HARDWARE/ADC/Core/ADC.c src/HARDWARE/CLOCK/Core/CLOCK.c src/HARDWARE/EUSART/EUSART.c src/HARDWARE/I2CM/I2CM.c src/HARDWARE/ISR/ISR.c src/HARDWARE/TIMER/TIMER.c src/TOOLS/Common/Core/Common.c src/TOOLS/Common/Port/Common_pt.c src/DRIVERS/LCD/Conf/LCD_cfg.c src/HARDWARE/GPIO/GPIO.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/src/main.p1 ${OBJECTDIR}/src/DRIVERS/LCD/Core/LCD.p1 ${OBJECTDIR}/src/HARDWARE/ADC/Core/ADC.p1 ${OBJECTDIR}/src/HARDWARE/CLOCK/Core/CLOCK.p1 ${OBJECTDIR}/src/HARDWARE/EUSART/EUSART.p1 ${OBJECTDIR}/src/HARDWARE/I2CM/I2CM.p1 ${OBJECTDIR}/src/HARDWARE/ISR/ISR.p1 ${OBJECTDIR}/src/HARDWARE/TIMER/TIMER.p1 ${OBJECTDIR}/src/TOOLS/Common/Core/Common.p1 ${OBJECTDIR}/src/TOOLS/Common/Port/Common_pt.p1 ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/src/main.p1.d ${OBJECTDIR}/src/DRIVERS/LCD/Core/LCD.p1.d ${OBJECTDIR}/src/HARDWARE/ADC/Core/ADC.p1.d ${OBJECTDIR}/src/HARDWARE/CLOCK/Core/CLOCK.p1.d ${OBJECTDIR}/src/HARDWARE/EUSART/EUSART.p1.d ${OBJECTDIR}/src/HARDWARE/I2CM/I2CM.p1.d ${OBJECTDIR}/src/HARDWARE/ISR/ISR.p1.d ${OBJECTDIR}/src/HARDWARE/TIMER/TIMER.p1.d ${OBJECTDIR}/src/TOOLS/Common/Core/Common.p1.d ${OBJECTDIR}/src/TOOLS/Common/Port/Common_pt.p1.d ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/src/main.p1 ${OBJECTDIR}/src/DRIVERS/LCD/Core/LCD.p1 ${OBJECTDIR}/src/HARDWARE/ADC/Core/ADC.p1 ${OBJECTDIR}/src/HARDWARE/CLOCK/Core/CLOCK.p1 ${OBJECTDIR}/src/HARDWARE/EUSART/EUSART.p1 ${OBJECTDIR}/src/HARDWARE/I2CM/I2CM.p1 ${OBJECTDIR}/src/HARDWARE/ISR/ISR.p1 ${OBJECTDIR}/src/HARDWARE/TIMER/TIMER.p1 ${OBJECTDIR}/src/TOOLS/Common/Core/Common.p1 ${OBJECTDIR}/src/TOOLS/Common/Port/Common_pt.p1 ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1 ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/src/main.p1.d ${OBJECTDIR}/src/DRIVERS/LCD/Core/LCD.p1.d ${OBJECTDIR}/src/HARDWARE/ADC/Core/ADC.p1.d ${OBJECTDIR}/src/HARDWARE/CLOCK/Core/CLOCK.p1.d ${OBJECTDIR}/src/HARDWARE/EUSART/EUSART.p1.d ${OBJECTDIR}/src/HARDWARE/I2CM/I2CM.p1.d ${OBJECTDIR}/src/HARDWARE/ISR/ISR.p1.d ${OBJECTDIR}/src/HARDWARE/TIMER/TIMER.p1.d ${OBJECTDIR}/src/TOOLS/Common/Core/Common.p1.d ${OBJECTDIR}/src/TOOLS/Common/Port/Common_pt.p1.d ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1.d ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/src/main.p1 ${OBJECTDIR}/src/DRIVERS/LCD/Core/LCD.p1 ${OBJECTDIR}/src/HARDWARE/ADC/Core/ADC.p1 ${OBJECTDIR}/src/HARDWARE/CLOCK/Core/CLOCK.p1 ${OBJECTDIR}/src/HARDWARE/EUSART/EUSART.p1 ${OBJECTDIR}/src/HARDWARE/I2CM/I2CM.p1 ${OBJECTDIR}/src/HARDWARE/ISR/ISR.p1 ${OBJECTDIR}/src/HARDWARE/TIMER/TIMER.p1 ${OBJECTDIR}/src/TOOLS/Common/Core/Common.p1 ${OBJECTDIR}/src/TOOLS/Common/Port/Common_pt.p1 ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1
+OBJECTFILES=${OBJECTDIR}/src/main.p1 ${OBJECTDIR}/src/DRIVERS/LCD/Core/LCD.p1 ${OBJECTDIR}/src/HARDWARE/ADC/Core/ADC.p1 ${OBJECTDIR}/src/HARDWARE/CLOCK/Core/CLOCK.p1 ${OBJECTDIR}/src/HARDWARE/EUSART/EUSART.p1 ${OBJECTDIR}/src/HARDWARE/I2CM/I2CM.p1 ${OBJECTDIR}/src/HARDWARE/ISR/ISR.p1 ${OBJECTDIR}/src/HARDWARE/TIMER/TIMER.p1 ${OBJECTDIR}/src/TOOLS/Common/Core/Common.p1 ${OBJECTDIR}/src/TOOLS/Common/Port/Common_pt.p1 ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1 ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1
 
 # Source Files
-SOURCEFILES=src/main.c src/DRIVERS/LCD/Core/LCD.c src/HARDWARE/ADC/Core/ADC.c src/HARDWARE/CLOCK/Core/CLOCK.c src/HARDWARE/EUSART/EUSART.c src/HARDWARE/I2CM/I2CM.c src/HARDWARE/ISR/ISR.c src/HARDWARE/TIMER/TIMER.c src/TOOLS/Common/Core/Common.c src/TOOLS/Common/Port/Common_pt.c src/DRIVERS/LCD/Conf/LCD_cfg.c
+SOURCEFILES=src/main.c src/DRIVERS/LCD/Core/LCD.c src/HARDWARE/ADC/Core/ADC.c src/HARDWARE/CLOCK/Core/CLOCK.c src/HARDWARE/EUSART/EUSART.c src/HARDWARE/I2CM/I2CM.c src/HARDWARE/ISR/ISR.c src/HARDWARE/TIMER/TIMER.c src/TOOLS/Common/Core/Common.c src/TOOLS/Common/Port/Common_pt.c src/DRIVERS/LCD/Conf/LCD_cfg.c src/HARDWARE/GPIO/GPIO.c
 
 
 
@@ -176,6 +176,14 @@ ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1: src/DRIVERS/LCD/Conf/LCD_cfg.c  nb
 	@-${MV} ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.d ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1: src/HARDWARE/GPIO/GPIO.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/src/HARDWARE/GPIO" 
+	@${RM} ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1.d 
+	@${RM} ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=none   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -Og -maddrqual=ignore -xassembler-with-cpp -I"src/DRIVERS/LCD/Conf" -I"src/DRIVERS/LCD/Core" -I"src/HARDWARE/ADC/Conf" -I"src/HARDWARE/ADC/Core" -I"src/HARDWARE/CLOCK/Conf" -I"src/HARDWARE/CLOCK/Core" -I"src/HARDWARE/EUSART" -I"src/HARDWARE/I2CM" -I"src/HARDWARE/ISR" -I"src/HARDWARE/TIMER" -I"src/TOOLS/Common/Conf" -I"src/TOOLS/Common/Core" -I"src/TOOLS/Common/Port" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1 src/HARDWARE/GPIO/GPIO.c 
+	@-${MV} ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.d ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 else
 ${OBJECTDIR}/src/main.p1: src/main.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}/src" 
@@ -265,6 +273,14 @@ ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1: src/DRIVERS/LCD/Conf/LCD_cfg.c  nb
 	@-${MV} ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.d ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/src/DRIVERS/LCD/Conf/LCD_cfg.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
+${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1: src/HARDWARE/GPIO/GPIO.c  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}/src/HARDWARE/GPIO" 
+	@${RM} ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1.d 
+	@${RM} ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -Og -maddrqual=ignore -xassembler-with-cpp -I"src/DRIVERS/LCD/Conf" -I"src/DRIVERS/LCD/Core" -I"src/HARDWARE/ADC/Conf" -I"src/HARDWARE/ADC/Core" -I"src/HARDWARE/CLOCK/Conf" -I"src/HARDWARE/CLOCK/Core" -I"src/HARDWARE/EUSART" -I"src/HARDWARE/I2CM" -I"src/HARDWARE/ISR" -I"src/HARDWARE/TIMER" -I"src/TOOLS/Common/Conf" -I"src/TOOLS/Common/Core" -I"src/TOOLS/Common/Port" -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     -o ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1 src/HARDWARE/GPIO/GPIO.c 
+	@-${MV} ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.d ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1.d 
+	@${FIXDEPS} ${OBJECTDIR}/src/HARDWARE/GPIO/GPIO.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
+	
 endif
 
 # ------------------------------------------------------------------------------------
@@ -287,12 +303,10 @@ ${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbp
 	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.map  -D__DEBUG=1  -mdebugger=none  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -Og -maddrqual=ignore -xassembler-with-cpp -I"src/DRIVERS/LCD/Conf" -I"src/DRIVERS/LCD/Core" -I"src/HARDWARE/ADC/Conf" -I"src/HARDWARE/ADC/Core" -I"src/HARDWARE/CLOCK/Conf" -I"src/HARDWARE/CLOCK/Core" -I"src/HARDWARE/EUSART" -I"src/HARDWARE/I2CM" -I"src/HARDWARE/ISR" -I"src/HARDWARE/TIMER" -I"src/TOOLS/Common/Conf" -I"src/TOOLS/Common/Core" -I"src/TOOLS/Common/Port" -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto        $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 	@${RM} ${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.hex 
 	
-	
 else
 ${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} ${DISTDIR} 
 	${MP_CC} $(MP_EXTRA_LD_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -Wl,-Map=${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.map  -DXPRJ_default=$(CND_CONF)  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -memi=wordwrite -O0 -Og -maddrqual=ignore -xassembler-with-cpp -I"src/DRIVERS/LCD/Conf" -I"src/DRIVERS/LCD/Core" -I"src/HARDWARE/ADC/Conf" -I"src/HARDWARE/ADC/Core" -I"src/HARDWARE/CLOCK/Conf" -I"src/HARDWARE/CLOCK/Core" -I"src/HARDWARE/EUSART" -I"src/HARDWARE/I2CM" -I"src/HARDWARE/ISR" -I"src/HARDWARE/TIMER" -I"src/TOOLS/Common/Conf" -I"src/TOOLS/Common/Core" -I"src/TOOLS/Common/Port" -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto     $(COMPARISON_BUILD) -Wl,--memorysummary,${DISTDIR}/memoryfile.xml -o ${DISTDIR}/esme-training-mcu.${IMAGE_TYPE}.${DEBUGGABLE_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
-	
 	
 endif
 
@@ -308,3 +322,11 @@ endif
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${OBJECTDIR}
 	${RM} -r ${DISTDIR}
+
+# Enable dependency checking
+.dep.inc: .depcheck-impl
+
+DEPFILES=$(wildcard ${POSSIBLE_DEPFILES})
+ifneq (${DEPFILES},)
+include ${DEPFILES}
+endif
