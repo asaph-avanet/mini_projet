@@ -174,7 +174,6 @@ bool TIM0_bStart(const TIM0_tenuClkSrc kenuClockSrc,
                  const TIM0_tenuPostscaler kenuPostscaler,
                  const uint8_t ku8CompareValue);
 
-
 /*--------------------------------------------------------------------------------------------------------------------*/
 /**
  * @brief Function used to stop the timer

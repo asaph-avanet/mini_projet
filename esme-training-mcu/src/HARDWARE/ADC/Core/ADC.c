@@ -90,7 +90,43 @@ void ADC_vidInitialize(void)
   ADPCH = ADC_CHANNEL_AVSS;
 }
 
+uint16_t ADC_u16ReadValue()
+{
+    // --- 1. Configuration de la broche (RA0) ---
+    
+    // Mettre RA0 en mode Entrée (le potentiomètre envoie un signal)
+    TRISAbits.TRISA0 = 1;
+    
+    // Désactiver le mode digital pour RA0 (passer en mode Analogique)
+    ANSELAbits.ANSELA0 = 1;
 
+    // --- 2. Configuration du module ADC ---
+
+    // Sélectionner le canal AN0 (qui est physiquement RA0)
+    ADPCH = 0x00; 
+
+    // Sélectionner la source d'horloge ADC (ex: FOSC/64, un choix sûr)
+    ADCLK = 0b001111;
+
+    // Configurer les références de tension
+    ADREFbits.ADPREF = 0b00; // VREF+ est VDD (tension d'alimentation)
+    ADREFbits.ADNREF = 0;   // VREF- est VSS (GND)
+
+    // --- 3. Configuration du format (CRUCIAL POUR 8 BITS) ---
+    
+    // Justification à gauche (ADFM = 0).
+    // Sur ce PIC, l'ADC a 12 bits. En justifiant à gauche,
+    // les 8 bits de poids fort (MSB) se retrouvent dans ADRESH,
+    // et les 4 bits de poids faible (LSB) dans ADRESL.
+    ADCON0bits.ADFM = 0; 
+    
+    // Allumer le module ADC
+    ADCON0bits.ADON = 1;
+    
+    ADCON0bits.ADGO = 1;
+    
+    return ADRESH;
+}
 /*--------------------------------------------------------------------------------------------------------------------*/
 ADC_tenuStatus ADC_enuGetRawValue(uint16_t * const kpu16AdcRawValue, const uint32_t ku32TimeoutMs)
 {
