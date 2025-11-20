@@ -22030,7 +22030,6 @@ void EUSART_vidInitialize(void)
 }
 
 
-
 EUSART_tenuStatus EUSART_enuRegisterRxCbk(const EUSART_tpfvidRxCallback kpfvidCallback)
 {
   EUSART_tenuStatus enuStatus = EUSART_eSTATUS_NO_OK;

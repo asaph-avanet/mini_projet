@@ -147,8 +147,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v F13360 `(v ~T0 @X0 0 tf3`*Cuc`us`E13273 ]
 [v F13366 `*Cuc ~T0 @X0 1 t ]
 [v F13365 `(v ~T0 @X0 0 tf3`C*Cuc`Cus`CE13273 ]
-"255 src/HARDWARE/EUSART/EUSART.c
-[; ;src/HARDWARE/EUSART/EUSART.c: 255:   else if(!ISR_bRegisterIsrCbk(ISR_ePERIPHERAL_EUSART, bInterruptHandler))
+"254 src/HARDWARE/EUSART/EUSART.c
+[; ;src/HARDWARE/EUSART/EUSART.c: 254:   else if(!ISR_bRegisterIsrCbk(ISR_ePERIPHERAL_EUSART, bInterruptHandler))
 [c E13255 -1 0 1 2 3 .. ]
 [n E13255 ISR_tenuPeripheral ISR_ePERIPHERAL_BEGIN ISR_ePERIPHERAL_TIMER ISR_ePERIPHERAL_EUSART ISR_ePERIPHERAL_INPUT_GPIO ISR_ePERIPHERAL_END  ]
 [v F13266 `(a ~T0 @X0 0 tf ]
@@ -2177,202 +2177,202 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;src/HARDWARE/EUSART/EUSART.c: 243: }
 [e :UE 1786 ]
 }
-"247
-[; ;src/HARDWARE/EUSART/EUSART.c: 247: EUSART_tenuStatus EUSART_enuRegisterRxCbk(const EUSART_tpfvidRxCallback kpfvidCallback)
+"246
+[; ;src/HARDWARE/EUSART/EUSART.c: 246: EUSART_tenuStatus EUSART_enuRegisterRxCbk(const EUSART_tpfvidRxCallback kpfvidCallback)
 [v _EUSART_enuRegisterRxCbk `(E13273 ~T0 @X0 1 ef1`C*F13354 ]
-"248
-[; ;src/HARDWARE/EUSART/EUSART.c: 248: {
+"247
+[; ;src/HARDWARE/EUSART/EUSART.c: 247: {
 {
 [e :U _EUSART_enuRegisterRxCbk ]
 [v F13359 `*F13360 ~T0 @X0 1 t ]
-"247
-[; ;src/HARDWARE/EUSART/EUSART.c: 247: EUSART_tenuStatus EUSART_enuRegisterRxCbk(const EUSART_tpfvidRxCallback kpfvidCallback)
+"246
+[; ;src/HARDWARE/EUSART/EUSART.c: 246: EUSART_tenuStatus EUSART_enuRegisterRxCbk(const EUSART_tpfvidRxCallback kpfvidCallback)
 [v _kpfvidCallback `C*F13360 ~T0 @X0 1 r1 ]
-"248
-[; ;src/HARDWARE/EUSART/EUSART.c: 248: {
+"247
+[; ;src/HARDWARE/EUSART/EUSART.c: 247: {
 [f ]
-"249
-[; ;src/HARDWARE/EUSART/EUSART.c: 249:   EUSART_tenuStatus enuStatus = EUSART_eSTATUS_NO_OK;
+"248
+[; ;src/HARDWARE/EUSART/EUSART.c: 248:   EUSART_tenuStatus enuStatus = EUSART_eSTATUS_NO_OK;
 [v _enuStatus `E13273 ~T0 @X0 1 a ]
 [e = _enuStatus . `E13273 1 ]
-"251
-[; ;src/HARDWARE/EUSART/EUSART.c: 251:   if(kpfvidCallback == ((void*)0))
+"250
+[; ;src/HARDWARE/EUSART/EUSART.c: 250:   if(kpfvidCallback == ((void*)0))
 [e $ ! == _kpfvidCallback -> -> -> 0 `i `*v `*F13365 1795  ]
-"252
-[; ;src/HARDWARE/EUSART/EUSART.c: 252:   {
+"251
+[; ;src/HARDWARE/EUSART/EUSART.c: 251:   {
 {
-"253
-[; ;src/HARDWARE/EUSART/EUSART.c: 253:     enuStatus = EUSART_eSTATUS_NULL_POINTER;
+"252
+[; ;src/HARDWARE/EUSART/EUSART.c: 252:     enuStatus = EUSART_eSTATUS_NULL_POINTER;
 [e = _enuStatus . `E13273 2 ]
-"254
-[; ;src/HARDWARE/EUSART/EUSART.c: 254:   }
+"253
+[; ;src/HARDWARE/EUSART/EUSART.c: 253:   }
 }
 [e $U 1796  ]
-"255
-[; ;src/HARDWARE/EUSART/EUSART.c: 255:   else if(!ISR_bRegisterIsrCbk(ISR_ePERIPHERAL_EUSART, bInterruptHandler))
+"254
+[; ;src/HARDWARE/EUSART/EUSART.c: 254:   else if(!ISR_bRegisterIsrCbk(ISR_ePERIPHERAL_EUSART, bInterruptHandler))
 [e :U 1795 ]
 [e $ ! ! != -> ( _ISR_bRegisterIsrCbk (2 , . `E13255 2 &U _bInterruptHandler `i -> 0 `i 1797  ]
-"256
-[; ;src/HARDWARE/EUSART/EUSART.c: 256:   {
+"255
+[; ;src/HARDWARE/EUSART/EUSART.c: 255:   {
 {
-"257
-[; ;src/HARDWARE/EUSART/EUSART.c: 257:     enuStatus = EUSART_eSTATUS_NO_OK;
+"256
+[; ;src/HARDWARE/EUSART/EUSART.c: 256:     enuStatus = EUSART_eSTATUS_NO_OK;
 [e = _enuStatus . `E13273 1 ]
-"258
-[; ;src/HARDWARE/EUSART/EUSART.c: 258:   }
+"257
+[; ;src/HARDWARE/EUSART/EUSART.c: 257:   }
 }
 [e $U 1798  ]
-"259
-[; ;src/HARDWARE/EUSART/EUSART.c: 259:   else
+"258
+[; ;src/HARDWARE/EUSART/EUSART.c: 258:   else
 [e :U 1797 ]
-"260
-[; ;src/HARDWARE/EUSART/EUSART.c: 260:   {
+"259
+[; ;src/HARDWARE/EUSART/EUSART.c: 259:   {
 {
-"261
-[; ;src/HARDWARE/EUSART/EUSART.c: 261:     EUSART_pfRxCallback = (EUSART_tpfvidRxCallback)kpfvidCallback;
+"260
+[; ;src/HARDWARE/EUSART/EUSART.c: 260:     EUSART_pfRxCallback = (EUSART_tpfvidRxCallback)kpfvidCallback;
 [e = _EUSART_pfRxCallback _kpfvidCallback ]
-"262
-[; ;src/HARDWARE/EUSART/EUSART.c: 262:     enuStatus = EUSART_eSTATUS_OK;
+"261
+[; ;src/HARDWARE/EUSART/EUSART.c: 261:     enuStatus = EUSART_eSTATUS_OK;
 [e = _enuStatus . `E13273 0 ]
-"266
-[; ;src/HARDWARE/EUSART/EUSART.c: 266:     PIE3bits.RC2IE = 1;
+"265
+[; ;src/HARDWARE/EUSART/EUSART.c: 265:     PIE3bits.RC2IE = 1;
 [e = . . _PIE3bits 0 7 -> -> 1 `i `uc ]
-"267
-[; ;src/HARDWARE/EUSART/EUSART.c: 267:   }
+"266
+[; ;src/HARDWARE/EUSART/EUSART.c: 266:   }
 }
 [e :U 1798 ]
 [e :U 1796 ]
-"269
-[; ;src/HARDWARE/EUSART/EUSART.c: 269:   return enuStatus;
+"268
+[; ;src/HARDWARE/EUSART/EUSART.c: 268:   return enuStatus;
 [e ) _enuStatus ]
 [e $UE 1794  ]
-"270
-[; ;src/HARDWARE/EUSART/EUSART.c: 270: }
+"269
+[; ;src/HARDWARE/EUSART/EUSART.c: 269: }
 [e :UE 1794 ]
 }
-"274
-[; ;src/HARDWARE/EUSART/EUSART.c: 274: EUSART_tenuStatus EUSART_enuUnRegisterRxCbk(void)
+"273
+[; ;src/HARDWARE/EUSART/EUSART.c: 273: EUSART_tenuStatus EUSART_enuUnRegisterRxCbk(void)
 [v _EUSART_enuUnRegisterRxCbk `(E13273 ~T0 @X0 1 ef ]
-"275
-[; ;src/HARDWARE/EUSART/EUSART.c: 275: {
+"274
+[; ;src/HARDWARE/EUSART/EUSART.c: 274: {
 {
 [e :U _EUSART_enuUnRegisterRxCbk ]
 [f ]
-"276
-[; ;src/HARDWARE/EUSART/EUSART.c: 276:   EUSART_tenuStatus enuStatus = EUSART_eSTATUS_NO_OK;
+"275
+[; ;src/HARDWARE/EUSART/EUSART.c: 275:   EUSART_tenuStatus enuStatus = EUSART_eSTATUS_NO_OK;
 [v _enuStatus `E13273 ~T0 @X0 1 a ]
 [e = _enuStatus . `E13273 1 ]
-"278
-[; ;src/HARDWARE/EUSART/EUSART.c: 278:   EUSART_pfRxCallback = ((void*)0);
+"277
+[; ;src/HARDWARE/EUSART/EUSART.c: 277:   EUSART_pfRxCallback = ((void*)0);
 [e = _EUSART_pfRxCallback -> -> -> 0 `i `*v `*F13379 ]
-"282
-[; ;src/HARDWARE/EUSART/EUSART.c: 282:   PIE3bits.RC2IE = 0;
+"281
+[; ;src/HARDWARE/EUSART/EUSART.c: 281:   PIE3bits.RC2IE = 0;
 [e = . . _PIE3bits 0 7 -> -> 0 `i `uc ]
-"285
-[; ;src/HARDWARE/EUSART/EUSART.c: 285:   if(ISR_bUnregisterIsrCbk(ISR_ePERIPHERAL_EUSART))
+"284
+[; ;src/HARDWARE/EUSART/EUSART.c: 284:   if(ISR_bUnregisterIsrCbk(ISR_ePERIPHERAL_EUSART))
 [e $ ! != -> ( _ISR_bUnregisterIsrCbk (1 . `E13255 2 `i -> 0 `i 1800  ]
-"286
-[; ;src/HARDWARE/EUSART/EUSART.c: 286:   {
+"285
+[; ;src/HARDWARE/EUSART/EUSART.c: 285:   {
 {
-"287
-[; ;src/HARDWARE/EUSART/EUSART.c: 287:     enuStatus = EUSART_eSTATUS_OK;
+"286
+[; ;src/HARDWARE/EUSART/EUSART.c: 286:     enuStatus = EUSART_eSTATUS_OK;
 [e = _enuStatus . `E13273 0 ]
-"288
-[; ;src/HARDWARE/EUSART/EUSART.c: 288:   }
+"287
+[; ;src/HARDWARE/EUSART/EUSART.c: 287:   }
 }
 [e :U 1800 ]
-"290
-[; ;src/HARDWARE/EUSART/EUSART.c: 290:   return enuStatus;
+"289
+[; ;src/HARDWARE/EUSART/EUSART.c: 289:   return enuStatus;
 [e ) _enuStatus ]
 [e $UE 1799  ]
-"291
-[; ;src/HARDWARE/EUSART/EUSART.c: 291: }
+"290
+[; ;src/HARDWARE/EUSART/EUSART.c: 290: }
 [e :UE 1799 ]
 }
-"295
-[; ;src/HARDWARE/EUSART/EUSART.c: 295: EUSART_tenuStatus EUSART_vidSendChar(const char ks8Data, const uint32_t ku32TimeoutMs)
+"294
+[; ;src/HARDWARE/EUSART/EUSART.c: 294: EUSART_tenuStatus EUSART_vidSendChar(const char ks8Data, const uint32_t ku32TimeoutMs)
 [v _EUSART_vidSendChar `(E13273 ~T0 @X0 1 ef2`Cuc`Cul ]
-"296
-[; ;src/HARDWARE/EUSART/EUSART.c: 296: {
+"295
+[; ;src/HARDWARE/EUSART/EUSART.c: 295: {
 {
 [e :U _EUSART_vidSendChar ]
-"295
-[; ;src/HARDWARE/EUSART/EUSART.c: 295: EUSART_tenuStatus EUSART_vidSendChar(const char ks8Data, const uint32_t ku32TimeoutMs)
+"294
+[; ;src/HARDWARE/EUSART/EUSART.c: 294: EUSART_tenuStatus EUSART_vidSendChar(const char ks8Data, const uint32_t ku32TimeoutMs)
 [v _ks8Data `Cuc ~T0 @X0 1 r1 ]
 [v _ku32TimeoutMs `Cul ~T0 @X0 1 r2 ]
-"296
-[; ;src/HARDWARE/EUSART/EUSART.c: 296: {
+"295
+[; ;src/HARDWARE/EUSART/EUSART.c: 295: {
 [f ]
-"297
-[; ;src/HARDWARE/EUSART/EUSART.c: 297:   EUSART_tenuStatus enuStatus = EUSART_eSTATUS_OK;
+"296
+[; ;src/HARDWARE/EUSART/EUSART.c: 296:   EUSART_tenuStatus enuStatus = EUSART_eSTATUS_OK;
 [v _enuStatus `E13273 ~T0 @X0 1 a ]
 [e = _enuStatus . `E13273 0 ]
-"298
-[; ;src/HARDWARE/EUSART/EUSART.c: 298:   uint32_t u32TimeoutIdx = 0;
+"297
+[; ;src/HARDWARE/EUSART/EUSART.c: 297:   uint32_t u32TimeoutIdx = 0;
 [v _u32TimeoutIdx `ul ~T0 @X0 1 a ]
 [e = _u32TimeoutIdx -> -> -> 0 `i `l `ul ]
-"300
-[; ;src/HARDWARE/EUSART/EUSART.c: 300:   while((PIR3bits.TX2IF == 0) && (u32TimeoutIdx < ku32TimeoutMs))
+"299
+[; ;src/HARDWARE/EUSART/EUSART.c: 299:   while((PIR3bits.TX2IF == 0) && (u32TimeoutIdx < ku32TimeoutMs))
 [e $U 1802  ]
 [e :U 1803 ]
-"301
-[; ;src/HARDWARE/EUSART/EUSART.c: 301:   {
+"300
+[; ;src/HARDWARE/EUSART/EUSART.c: 300:   {
 {
-"302
-[; ;src/HARDWARE/EUSART/EUSART.c: 302:     _delay((unsigned long)((1)*((32 * 1000000UL)/4000.0)));
+"301
+[; ;src/HARDWARE/EUSART/EUSART.c: 301:     _delay((unsigned long)((1)*((32 * 1000000UL)/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> * -> -> -> 32 `i `l `ul -> 1000000 `ul `d .4000.0 `ul ]
-"304
-[; ;src/HARDWARE/EUSART/EUSART.c: 304:     u32TimeoutIdx++;
+"303
+[; ;src/HARDWARE/EUSART/EUSART.c: 303:     u32TimeoutIdx++;
 [e ++ _u32TimeoutIdx -> -> -> 1 `i `l `ul ]
-"305
-[; ;src/HARDWARE/EUSART/EUSART.c: 305:   }
+"304
+[; ;src/HARDWARE/EUSART/EUSART.c: 304:   }
 }
 [e :U 1802 ]
-"300
-[; ;src/HARDWARE/EUSART/EUSART.c: 300:   while((PIR3bits.TX2IF == 0) && (u32TimeoutIdx < ku32TimeoutMs))
+"299
+[; ;src/HARDWARE/EUSART/EUSART.c: 299:   while((PIR3bits.TX2IF == 0) && (u32TimeoutIdx < ku32TimeoutMs))
 [e $ && == -> . . _PIR3bits 0 6 `i -> 0 `i < _u32TimeoutIdx _ku32TimeoutMs 1803  ]
 [e :U 1804 ]
-"307
-[; ;src/HARDWARE/EUSART/EUSART.c: 307:   if(u32TimeoutIdx >= ku32TimeoutMs)
+"306
+[; ;src/HARDWARE/EUSART/EUSART.c: 306:   if(u32TimeoutIdx >= ku32TimeoutMs)
 [e $ ! >= _u32TimeoutIdx _ku32TimeoutMs 1805  ]
-"308
-[; ;src/HARDWARE/EUSART/EUSART.c: 308:   {
+"307
+[; ;src/HARDWARE/EUSART/EUSART.c: 307:   {
 {
-"309
-[; ;src/HARDWARE/EUSART/EUSART.c: 309:     enuStatus = EUSART_eSTATUS_TIMEOUT;
+"308
+[; ;src/HARDWARE/EUSART/EUSART.c: 308:     enuStatus = EUSART_eSTATUS_TIMEOUT;
 [e = _enuStatus . `E13273 3 ]
-"310
-[; ;src/HARDWARE/EUSART/EUSART.c: 310:     RC2STAbits.SPEN = 0;
+"309
+[; ;src/HARDWARE/EUSART/EUSART.c: 309:     RC2STAbits.SPEN = 0;
 [e = . . _RC2STAbits 0 7 -> -> 0 `i `uc ]
-"311
-[; ;src/HARDWARE/EUSART/EUSART.c: 311:     RC2STAbits.SPEN = 1;
+"310
+[; ;src/HARDWARE/EUSART/EUSART.c: 310:     RC2STAbits.SPEN = 1;
 [e = . . _RC2STAbits 0 7 -> -> 1 `i `uc ]
-"312
-[; ;src/HARDWARE/EUSART/EUSART.c: 312:   }
+"311
+[; ;src/HARDWARE/EUSART/EUSART.c: 311:   }
 }
 [e $U 1806  ]
-"313
-[; ;src/HARDWARE/EUSART/EUSART.c: 313:   else
+"312
+[; ;src/HARDWARE/EUSART/EUSART.c: 312:   else
 [e :U 1805 ]
-"314
-[; ;src/HARDWARE/EUSART/EUSART.c: 314:   {
+"313
+[; ;src/HARDWARE/EUSART/EUSART.c: 313:   {
 {
-"315
-[; ;src/HARDWARE/EUSART/EUSART.c: 315:     enuStatus = EUSART_eSTATUS_OK;
+"314
+[; ;src/HARDWARE/EUSART/EUSART.c: 314:     enuStatus = EUSART_eSTATUS_OK;
 [e = _enuStatus . `E13273 0 ]
-"316
-[; ;src/HARDWARE/EUSART/EUSART.c: 316:   }
+"315
+[; ;src/HARDWARE/EUSART/EUSART.c: 315:   }
 }
 [e :U 1806 ]
-"319
-[; ;src/HARDWARE/EUSART/EUSART.c: 319:   TX2REG = ks8Data;
+"318
+[; ;src/HARDWARE/EUSART/EUSART.c: 318:   TX2REG = ks8Data;
 [e = _TX2REG -> _ks8Data `uc ]
-"321
-[; ;src/HARDWARE/EUSART/EUSART.c: 321:   return enuStatus;
+"320
+[; ;src/HARDWARE/EUSART/EUSART.c: 320:   return enuStatus;
 [e ) _enuStatus ]
 [e $UE 1801  ]
-"322
-[; ;src/HARDWARE/EUSART/EUSART.c: 322: }
+"321
+[; ;src/HARDWARE/EUSART/EUSART.c: 321: }
 [e :UE 1801 ]
 }
 [a 2C 69 85 83 65 82 84 95 118 105 100 73 110 105 116 105 97 108 105 122 101 0 ]

@@ -242,7 +242,6 @@ void EUSART_vidInitialize(void)
   RC2STAbits.CREN = 1;
 }
 
-
 /*--------------------------------------------------------------------------------------------------------------------*/
 EUSART_tenuStatus EUSART_enuRegisterRxCbk(const EUSART_tpfvidRxCallback kpfvidCallback)
 {

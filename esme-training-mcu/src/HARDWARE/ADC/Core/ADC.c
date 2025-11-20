@@ -125,7 +125,7 @@ uint16_t ADC_u16ReadValue()
     
     ADCON0bits.ADGO = 1;
     
-    return ADRESH;
+    return (uint16_t)((ADRESH << 2) | (ADRESL >> 6));
 }
 /*--------------------------------------------------------------------------------------------------------------------*/
 ADC_tenuStatus ADC_enuGetRawValue(uint16_t * const kpu16AdcRawValue, const uint32_t ku32TimeoutMs)

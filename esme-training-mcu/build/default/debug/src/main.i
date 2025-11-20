@@ -21805,7 +21805,7 @@ void CMN_vidDelayMs(const uint32_t ku32DelayMs);
 # 20 "src/main.c" 2
 
 # 1 "src/HARDWARE/GPIO\\GPIO.h" 1
-# 37 "src/HARDWARE/GPIO\\GPIO.h"
+# 31 "src/HARDWARE/GPIO\\GPIO.h"
 typedef enum {
     GPIO_OK = 0,
     GPIO_NOT_OK
@@ -21824,7 +21824,7 @@ void GPIO_LedToggle(void);
 _Bool GPIO_ButtonPressed(void);
 
 
-void GPIO_RegisterButtonCallback(GPIO_ButtonCallback_t callback);
+_Bool GPIO_RegisterButtonCallback(GPIO_ButtonCallback_t callback);
 
 
 _Bool GPIO_ISR_Callback(void);

@@ -84,6 +84,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "25239
 [; ;C:/Users/moham/.mchp_packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q10.h: 25239: extern volatile unsigned char ADRESH __attribute__((address(0xF5F)));
 [v _ADRESH `Vuc ~T0 @X0 0 e@3935 ]
+"25169
+[; ;C:/Users/moham/.mchp_packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q10.h: 25169: extern volatile unsigned char ADRESL __attribute__((address(0xF5E)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@3934 ]
 [v F13354 `*us ~T0 @X0 1 t ]
 "131 src/HARDWARE/ADC/Core/ADC.c
 [; ;src/HARDWARE/ADC/Core/ADC.c: 131: ADC_tenuStatus ADC_enuGetRawValue(uint16_t * const kpu16AdcRawValue, const uint32_t ku32TimeoutMs)
@@ -93,9 +96,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20 C:\Program Files\Microchip\xc8\v2.50\pic\include\builtins.h
 [v __delay `JF526 ~T0 @X0 0 e ]
 [p i __delay ]
-"25169 C:/Users/moham/.mchp_packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q10.h
-[; ;C:/Users/moham/.mchp_packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q10.h: 25169: extern volatile unsigned char ADRESL __attribute__((address(0xF5E)));
-[v _ADRESL `Vuc ~T0 @X0 0 e@3934 ]
 "54 C:/Users/moham/.mchp_packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q10.h
 [; ;C:/Users/moham/.mchp_packs/Microchip/PIC18F-Q_DFP/1.24.430/xc8\pic\include\proc\pic18f47q10.h: 54: __asm("CLCIN0PPS equ 0E1Fh");
 [; <" CLCIN0PPS equ 0E1Fh ;# ">
@@ -1881,8 +1881,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;src/HARDWARE/ADC/Core/ADC.c: 126:     ADCON0bits.ADGO = 1;
 [e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
 "128
-[; ;src/HARDWARE/ADC/Core/ADC.c: 128:     return ADRESH;
-[e ) -> _ADRESH `us ]
+[; ;src/HARDWARE/ADC/Core/ADC.c: 128:     return (uint16_t)((ADRESH << 2) | (ADRESL >> 6));
+[e ) -> | << -> _ADRESH `i -> 2 `i >> -> _ADRESL `i -> 6 `i `us ]
 [e $UE 1777  ]
 "129
 [; ;src/HARDWARE/ADC/Core/ADC.c: 129: }
